@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form action="" method="post">
+        {%csrf_token %}
+       <input type="text" name="txtp" placeholder="Enter P" value="{{p}}" />
+       <br><br>
+       <input type="text" name="txtr" placeholder="Enter R" value="{{r}}"/>
+       <br><br>
+       <input type="text" name="txtt" placeholder="Enter T" value="{{t}}"/>
+       <br><br>
+       <input type="submit" name="btnsubmit" value="Calculate" />
+
+    </form>
+    {{res}}
+</body>
+</html>
